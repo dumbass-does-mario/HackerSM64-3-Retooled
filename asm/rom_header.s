@@ -10,7 +10,7 @@
 /* Revision */
 .half 0x0000
 .byte 20 /* Major version 2.0 */
-.ascii LIBULTRA_STR_VER /* Minor Version */
+.ascii "L" /* Minor Version */
 
 #ifdef VERSION_CN
     .fill 0x30
@@ -20,11 +20,8 @@
 .word  0x74757C24               /* Checksum 2 */
 .word  0x00000000               /* Unknown */
 .word  0x00000000               /* Unknown */
-#ifdef VERSION_SH
-.ascii "SUPERMARIO64        "   /* Internal ROM name */
-#else
 .ascii "SUPER MARIO 64      "   /* Internal ROM name */
-#endif
+/*      ....................     */
 .word  0x00000000               /* Unknown */
 .word  0x0000004E               /* Cartridge */
 .ascii "SM"                     /* Cartridge ID */
